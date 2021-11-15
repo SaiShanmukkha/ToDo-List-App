@@ -1,0 +1,35 @@
+﻿@model DemApp.Models.ExpenseType
+
+<form method="post" asp-action="Create">
+    <div class="border p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group row">
+            <h2 class="text-black-50 pl-3">Add Expense Type:</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group row">
+                    <div class="col-6">
+                        <label asp-for="ExpenseTypeName"></label>
+                    </div>
+                </div> <div class="form-group row">
+                    <div class="col-6">
+                        <input asp-for="ExpenseTypeName" class="form-control" />
+                        <span asp-validation-for="ExpenseTypeName" class="text-danger"></span>
+                    </div>
+                </div> <div class="form-group row">
+                    <div class="col-6">
+                        <input type="submit" class="btn btn-info w-75" value="Create" />
+                    </div><div class="col-6">
+                        <a class="nav-link text-white w-75 btn btn-danger" asp-area="" asp-controller="ExpenseType" asp-action="Index">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts{ 
+    @{ <partial name="_ValidationScriptsPartial"/>}
+}
