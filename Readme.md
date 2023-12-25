@@ -1,4 +1,4 @@
-# DemApp:
+# TODO List App:
 
 .NET Core MVC Application 
 
@@ -7,9 +7,9 @@
 
 ## Steps to Add Database:
 
-1. Add Backend Database server  name in appsettings.json file to connect to a database.
+1. Add the Backend Database server  name in the appsettings.json file to connect to a database.
 
-2. For Making Migrations, open CMD in project folder and enter: 
+2. For Making Migrations, open CMD in the project folder and enter: 
 
     `add-migration <migration-name>`
 
